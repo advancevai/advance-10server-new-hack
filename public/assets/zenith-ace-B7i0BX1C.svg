@@ -1,0 +1,14 @@
+<!-- Zenith Ace -->
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="zag" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#dc2626" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#030712"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#zag)" stroke="#ef4444" stroke-width="2"/>
+  <!-- Spade Ace / Zenith Crown -->
+  <path d="M64 30C58 48 42 60 42 72C42 82 50 88 60 86L56 98H72L68 86C78 88 86 82 86 72C86 60 70 48 64 30Z" fill="white"/>
+  <circle cx="64" cy="62" r="5" fill="#dc2626"/>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "key": {
+      ".read": true,
+      ".write": false
+    },
+    "vip_keys": {
+      "$keyId": {
+        ".read": true,
+        ".write": "auth != null || newData.child('status').exists()"
+      }
+    },
+    "keys": {
+      "$keyId": {
+        ".read": true,
+        ".write": false
+      }
+    },
+    "devices": {
+      "$deviceId": {
+        ".read": true,
+        ".write": true
+      }
+    },
+    "systemSettings": {
+      ".read": true,
+      ".write": false
+    }
+  }
+}

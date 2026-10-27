@@ -1,0 +1,14 @@
+<!-- Halo Sigma -->
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="hsg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#261002" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#030712"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#hsg)" stroke="#fbbf24" stroke-width="2"/>
+  <circle cx="64" cy="64" r="34" stroke="#fbbf24" stroke-width="3" opacity="0.7"/>
+  <!-- Greek Sigma symbol Σ -->
+  <path d="M78 44H48L62 64L48 84H78" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,14 @@
+<!-- Phantom Drift -->
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pdg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#431407" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#030712"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#pdg)" stroke="#fb923c" stroke-width="2"/>
+  <!-- Drift Flame Arrow -->
+  <path d="M42 84L82 44M82 44H54M82 44V72" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="44" cy="82" r="5" fill="#fed7aa"/>
+</svg>

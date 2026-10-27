@@ -1,0 +1,15 @@
+<!-- Nyx Oracle -->
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nog" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#030712"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#nog)" stroke="#818cf8" stroke-width="2"/>
+  <!-- All-seeing Eye of Nyx -->
+  <path d="M30 64C42 46 86 46 98 64C86 82 42 82 30 64Z" stroke="white" stroke-width="5" fill="none"/>
+  <circle cx="64" cy="64" r="12" fill="#818cf8"/>
+  <circle cx="64" cy="64" r="5" fill="#ffffff"/>
+</svg>

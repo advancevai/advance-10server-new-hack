@@ -1,0 +1,306 @@
+@import "tailwindcss";
+
+@layer base {
+  :root,
+  .dark,
+  .light {
+    --radius: 1rem;
+    --background: #020408;
+    --foreground: #FFFFFF;
+    --card: #080D16;
+    --card-foreground: #FFFFFF;
+    --card-secondary: #111827;
+    --card-secondary-foreground: #FFFFFF;
+    --popover: #080D16;
+    --popover-foreground: #FFFFFF;
+    --primary: #008CFF;
+    --primary-foreground: #FFFFFF;
+    --secondary: #111827;
+    --secondary-foreground: #FFFFFF;
+    --muted: #080D16;
+    --muted-foreground: #B8C4D6;
+    --accent: #008CFF;
+    --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
+    --border: #182844;
+    --input: #111827;
+    --ring: #008CFF;
+
+    /* Brand Accents strictly Black, White, Electric Blue & Neon Cyan */
+    --neon-blue: #008CFF;
+    --neon-cyan: #00E5FF;
+    --silver-gray: #B8C4D6;
+    --dark-charcoal: #080D16;
+    --surface-metallic: #111827;
+
+    /* Small Status Indicators Only */
+    --status-green: #10B981;
+    --status-red: #EF4444;
+    --status-amber: #F59E0B;
+
+    /* Electric Blue & Charcoal Gradients */
+    --gradient-midnight: linear-gradient(180deg, #020408 0%, #080D16 50%, #020408 100%);
+    --gradient-cyber: linear-gradient(135deg, #FFFFFF 0%, #008CFF 55%, #00E5FF 100%);
+    --gradient-metallic: linear-gradient(180deg, #182234 0%, #111827 100%);
+    --gradient-metallic-card: linear-gradient(135deg, rgba(24, 34, 52, 0.95) 0%, rgba(17, 24, 39, 0.95) 100%);
+
+    /* Glowing Blue Borders & Neon Cyan Accents */
+    --shadow-neon-cyan: 0 0 20px -2px rgba(0, 229, 255, 0.35), 0 0 40px -8px rgba(0, 140, 255, 0.2);
+    --shadow-neon-blue: 0 0 20px -2px rgba(0, 140, 255, 0.45), 0 0 40px -8px rgba(0, 229, 255, 0.2);
+    --shadow-glass: 0 8px 28px -4px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    /* Layered Ambient Depth - Electric Blue and Deep Charcoal */
+    --bg-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0, 140, 255, 0.12), transparent 70%),
+      radial-gradient(ellipse 70% 45% at 100% 40%, rgba(0, 229, 255, 0.05), transparent 60%),
+      radial-gradient(ellipse 70% 45% at 0% 85%, rgba(0, 140, 255, 0.06), transparent 60%);
+
+    /* Dark Gray Metallic Card Surfaces */
+    --glass-bg: linear-gradient(135deg, rgba(8, 13, 22, 0.94) 0%, rgba(17, 24, 39, 0.9) 100%);
+    --glass-strong-bg: linear-gradient(135deg, rgba(17, 24, 39, 0.96) 0%, rgba(8, 13, 22, 0.98) 100%);
+    --glass-border: #182844;
+
+    --font-display: "Orbitron", ui-sans-serif, system-ui;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    color-scheme: dark;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  html,
+  body {
+    background-color: #020408;
+    background-image: var(--gradient-midnight);
+    color: #FFFFFF;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+}
+
+/* Layered Ambient Depth */
+.ambient-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+}
+
+/* Subtle Electric Blue Ambient Header Glow */
+.header-ambient-glow {
+  pointer-events: none;
+  position: absolute;
+  inset-x: 0;
+  top: 0;
+  height: 280px;
+  background: radial-gradient(ellipse 70% 60% at 50% -10%, rgba(0, 140, 255, 0.18) 0%, transparent 75%);
+}
+
+/* Diagonal Futuristic Patterns */
+.diagonal-pattern {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 140, 255, 0.035) 0,
+    rgba(0, 140, 255, 0.035) 1.5px,
+    transparent 0,
+    transparent 12px
+  );
+}
+
+/* Secondary Surfaces: Dark Gray (#111827) with subtle metallic gradient */
+.metallic-surface {
+  background: linear-gradient(180deg, #182234 0%, #111827 100%);
+  border: 1px solid #182844;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.09);
+}
+
+.card-dark {
+  background: linear-gradient(135deg, rgba(8, 13, 22, 0.95) 0%, rgba(17, 24, 39, 0.92) 100%);
+  border: 1px solid #182844;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.card-secondary {
+  background: #111827;
+  border: 1px solid #182844;
+  border-radius: 1rem;
+}
+
+/* Glowing Blue Borders & Soft White Highlights */
+.glow-blue {
+  border-color: rgba(0, 140, 255, 0.5) !important;
+  box-shadow: 0 0 20px -2px rgba(0, 140, 255, 0.4), 0 0 40px -10px rgba(0, 229, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+.glow-cyan {
+  border-color: rgba(0, 229, 255, 0.6) !important;
+  box-shadow: 0 0 22px -2px rgba(0, 229, 255, 0.45), 0 0 45px -10px rgba(0, 140, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.glow-border {
+  border: 1px solid rgba(0, 140, 255, 0.4);
+  box-shadow: 0 0 16px -2px rgba(0, 140, 255, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid #182844;
+  box-shadow: var(--shadow-glass);
+}
+
+.glass-strong {
+  background: var(--glass-strong-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid #182844;
+  box-shadow: var(--shadow-glass);
+}
+
+.gradient-text {
+  background: var(--gradient-cyber);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.electric-blue-text {
+  color: #008CFF;
+  text-shadow: 0 0 14px rgba(0, 140, 255, 0.6);
+}
+
+.neon-cyan-text {
+  color: #00E5FF;
+  text-shadow: 0 0 14px rgba(0, 229, 255, 0.65);
+}
+
+.silver-text {
+  color: #B8C4D6;
+}
+
+.brand-wordmark .brand-word-signal {
+  color: #FFFFFF;
+}
+
+.brand-wordmark .brand-word-win {
+  color: #008CFF;
+  text-shadow: 0 0 12px rgba(0, 140, 255, 0.7);
+}
+
+.t-eyebrow {
+  font-family: var(--font-display);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.t-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.t-meta {
+  color: #B8C4D6;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.t-body {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.grid-pattern {
+  background-image: linear-gradient(rgba(0, 140, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 140, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Smooth Animated Neon Light Effects */
+@keyframes neon-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 14px rgba(0, 140, 255, 0.55), inset 0 0 6px rgba(0, 229, 255, 0.3);
+    border-color: rgba(0, 140, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(0, 229, 255, 0.8), inset 0 0 10px rgba(0, 229, 255, 0.5);
+    border-color: rgba(0, 229, 255, 0.8);
+  }
+}
+
+.neon-glow-animated {
+  animation: neon-glow-pulse 3.5s ease-in-out infinite;
+}
+
+@keyframes neon-sweep {
+  0% {
+    transform: translateX(-150%);
+  }
+  50%, 100% {
+    transform: translateX(250%);
+  }
+}
+
+.neon-sweep-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.18), transparent);
+  animation: neon-sweep 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  20%,
+  60% {
+    transform: translate(-10px);
+  }
+  40%,
+  80% {
+    transform: translate(10px);
+  }
+}
+
+.shake {
+  animation: 0.5s shake ease-in-out;
+}
+
+@keyframes float-particle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-24px) scale(1.15);
+  }
+}
+
+.particle {
+  animation: 6s ease-in-out infinite float-particle;
+}

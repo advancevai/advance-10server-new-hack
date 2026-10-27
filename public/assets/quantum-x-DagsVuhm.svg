@@ -1,0 +1,22 @@
+<!-- Quantum X Logo -->
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="qg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#082f49" stop-opacity="0.95"/>
+    </radialGradient>
+    <linearGradient id="qglow" x1="0" y1="0" x2="128" y2="128">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#030712"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#qg)" stroke="url(#qglow)" stroke-width="2"/>
+  <circle cx="64" cy="64" r="38" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="4 6" opacity="0.6"/>
+  <path d="M42 42L86 86M86 42L42 86" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="9" fill="#22d3ee" filter="drop-shadow(0 0 8px #22d3ee)"/>
+  <circle cx="64" cy="26" r="4" fill="#a5f3fc"/>
+  <circle cx="64" cy="102" r="4" fill="#a5f3fc"/>
+  <circle cx="26" cy="64" r="4" fill="#a5f3fc"/>
+  <circle cx="102" cy="64" r="4" fill="#a5f3fc"/>
+</svg>

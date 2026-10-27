@@ -1,0 +1,14 @@
+<!-- Specter -->
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="spg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#18022e" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#030712"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="url(#spg)" stroke="#c084fc" stroke-width="2"/>
+  <path d="M40 76C40 54 50 40 64 40C78 40 88 54 88 76C88 88 80 84 76 88C72 92 68 86 64 88C60 86 56 92 52 88C48 84 40 88 40 76Z" fill="white" opacity="0.9"/>
+  <circle cx="56" cy="60" r="5" fill="#3b0764"/>
+  <circle cx="72" cy="60" r="5" fill="#3b0764"/>
+</svg>

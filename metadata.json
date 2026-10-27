@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix SignalWin – AI Lottery Signal Engine",
+  "description": "Live AI prediction desk for WinGo, K3 Dice, and TrxWinGo lottery games with 10 Pro AI Predictor algorithms, multi-step risk management, and live trend analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
